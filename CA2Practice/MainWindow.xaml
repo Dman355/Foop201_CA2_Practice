@@ -1,0 +1,27 @@
+﻿<Window x:Class="CA2Practice.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CA2Practice"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="342.112" Width="472.05">
+    <Grid>
+        <Label Name="LblHeader" Content="Member Information" HorizontalAlignment="Left" Margin="187,10,0,0" VerticalAlignment="Top"/>
+        <ListBox Name="LstBoxMembers" HorizontalAlignment="Left" Height="200" Margin="10,100,0,0" VerticalAlignment="Top" Width="200" SelectionChanged="LstBoxMembers_SelectionChanged"/>
+        <Label Name="LblCboType" Content="Member Type:" HorizontalAlignment="Left" Margin="10,60,0,0" VerticalAlignment="Top"/>
+        <ComboBox Name="CboType" HorizontalAlignment="Left" Margin="101,60,0,0" VerticalAlignment="Top" Width="109" SelectionChanged="CboType_SelectionChanged"/>
+        <TextBox Name="TxtSearchBox" HorizontalAlignment="Left" Height="23" Margin="240,60,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="Search By Name"/>
+        <Button Name="btnSearch" Content="Search" HorizontalAlignment="Left" Margin="380,60,0,0" VerticalAlignment="Top" Width="75" Height="22" Click="btnSearch_Click"/>
+        <Label Name="LblMemberName" Content="Name:" HorizontalAlignment="Left" Margin="228,100,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.54,-0.517"/>
+        <Label x:Name="LblMemberPhone" Content="Phone:" HorizontalAlignment="Left" Margin="228,130,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="LblMemberAddress" Content="Address" HorizontalAlignment="Left" Margin="228,160,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="LblMemberType" Content="Member Type:" HorizontalAlignment="Left" Margin="228,190,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="LblMemberYear" Content="Year joined:" HorizontalAlignment="Left" Margin="228,220,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="DisplayMemberName" HorizontalAlignment="Left" Margin="330,100,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.54,-0.517" Width="100"/>
+        <TextBlock x:Name="DisplayMemberPhone" HorizontalAlignment="Left" Margin="330,130,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.54,-0.517" Width="100"/>
+        <TextBlock x:Name="DisplayMemberAddress" HorizontalAlignment="Left" Margin="330,160,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.54,-0.517" Width="100"/>
+        <TextBlock x:Name="DisplayMemberType" HorizontalAlignment="Left" Margin="330,190,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.54,-0.517" Width="100"/>
+        <TextBlock x:Name="DisplayMemberYear" HorizontalAlignment="Left" Margin="330,220,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.54,-0.517" Width="100"/>
+    </Grid>
+</Window>
